@@ -1,0 +1,38 @@
+.view-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  animation: view-appear linear 0.5s;
+  background-image: var(--bg-image);
+}
+
+.view-title {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.view-content {
+  height: 100%;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@keyframes view-appear {
+  0% {
+    top: 100%;
+    opacity: 0;
+  }
+  80% {
+    top: 0;
+    opacity: 0.5;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}

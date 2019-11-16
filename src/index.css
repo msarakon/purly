@@ -1,8 +1,12 @@
 :root {
+  --purple-light: #eeceef;
   --purple: #b200b7;
   --purple-dark: #770578;
+  --orange-light: #ffd387;
   --orange: #f38100;
   --orange-dark: #db682e;
+  --bg-image: linear-gradient(var(--orange-light), var(--purple-light));
+  --title-font: "Pacifico", cursive;
   font-size: 14px;
 }
 
@@ -12,7 +16,7 @@ body {
 }
 
 #root {
-  background-image: linear-gradient(#ffd387, #eeceef);
+  background-image: var(--bg-image);
   float: left;
   width: 100vw;
   height: 100vh;

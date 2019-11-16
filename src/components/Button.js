@@ -1,8 +1,10 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ content }) => {
-  return <div className="button">{content}</div>;
-};
+const Button = ({ content, onSelect }) => (
+  <div className="button" onClick={onSelect}>
+    {content}
+  </div>
+);
 
 export default Button;

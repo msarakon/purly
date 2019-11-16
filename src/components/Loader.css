@@ -1,5 +1,5 @@
 .logo {
-  font-family: "Pacifico", cursive;
+  font-family: var(--title-font);
   font-size: 10em;
   color: var(--orange-dark);
   margin-top: 25%;

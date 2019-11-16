@@ -6,14 +6,14 @@
   width: 100%;
   animation: view-appear linear 0.5s;
   background-image: var(--bg-image);
+  padding-top: 1em;
 }
 
 .view-title {
   font-size: 2.5em;
-  font-family: "Fredoka One", cursive;
+  font-family: var(--alt-title-font);
   color: var(--purple-dark);
   text-align: center;
-  padding-top: 1em;
 }
 
 .view-content {
@@ -30,17 +30,40 @@
   background-color: rgba(255, 255, 255, 0.7);
   padding: 1.5em;
   box-shadow: 7px 7px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: box-appear 0.5s;
 }
 
-.box:hover {
+.clickable:hover {
   background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   transition: 0.5s all;
   transform: scale(1.02);
 }
 
-.box.small {
-  padding: 1em 1.5em;
+.box-question {
+  margin-bottom: 1em;
+}
+
+.box-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box-options div {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5em 1em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 1em 0.5em 0;
+}
+
+.box-options .selected {
+  background-color: rgba(0, 0, 0, 0.07);
+  box-shadow: none;
 }
 
 @keyframes view-appear {
@@ -55,5 +78,23 @@
   100% {
     top: 0;
     opacity: 1;
+  }
+}
+
+@keyframes box-appear {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .view-title {
+    font-size: 2em;
+  }
+  .box {
+    padding: 1em;
   }
 }

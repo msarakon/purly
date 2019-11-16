@@ -1,7 +1,62 @@
 .header {
-  float: left;
+  display: flex;
+  flex-direction: column;
   height: 35%;
   width: 100%;
+  align-items: stretch;
+  position: relative;
+}
+
+.header-bg-left,
+.header-bg-right {
+  font-size: 7em;
+  position: absolute;
+  text-align: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.header-bg-left {
+  left: 0.5em;
+}
+
+.header-bg-right {
+  right: 0.5em;
+}
+
+.header-content {
+  padding: 3em 1em 0 1em;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2em;
+  font-family: var(--alt-title-font);
+  color: var(--purple-dark);
+}
+
+.header-theme {
+  font-size: 3em;
+  font-family: var(--title-font);
+  color: var(--orange-dark);
+  text-shadow: 3px 3px var(--purple-dark);
+}
+
+.header .box {
+  margin-top: 1em;
+}
+
+.close {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-family: var(--alt-title-font);
+  color: var(--orange-dark);
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
 }
 
 .buttons {
@@ -26,4 +81,17 @@
   height: 200px;
   width: 200px;
   color: var(--orange);
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 0.8em;
+  }
+  .header-theme {
+    text-shadow: 2px 2px var(--purple-dark);
+  }
+  .header-bg-left,
+  .header-bg-right {
+    font-size: 5em;
+  }
 }

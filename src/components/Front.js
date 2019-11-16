@@ -13,7 +13,8 @@ const Front = ({ setView }) => (
     <div className="header"></div>
     <div className="buttons">
       <div className="buttons-top">
-        <Button content={<FontAwesomeIcon icon={faSmile} />} />
+        <Button content={<FontAwesomeIcon icon={faSmile} />} 
+          onSelect={() => setView("fairdata")}/> 
       </div>
       <div className="buttons-bottom">
         <Button content={<FontAwesomeIcon icon={faBed} />} />

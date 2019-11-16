@@ -3,6 +3,7 @@ import Loader from "./components/Loader";
 import Front from "./components/Front";
 import Burger from "./components/Burger";
 import Help from "./components/Help";
+import Fairdata from "./components/Fairdata";
 import "./App.css";
 import "./components/View.css";
 
@@ -25,6 +26,8 @@ const App = () => {
           switch (view) {
             case "help":
               return <Help setView={setView} />;
+            case "fairdata":
+              return <Fairdata setView={setView} />;
             default:
               return <Front setView={setView} />;
           }

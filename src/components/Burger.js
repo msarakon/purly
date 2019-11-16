@@ -22,10 +22,10 @@ class Burger extends React.Component {
         <a id="tips" className="menu-item" href="/contact">
           Tips
         </a>
-        <a id="activity" className="menu-item" href="/activity">
-          <FontAwesomeIcon icon={faBed} />
+        <a id="activity" className="menu-item" href="/fairdata">
+          Data
         </a>
-        <a id="contact" className="menu-item" href="/activity">
+        <a id="contact" className="menu-item" href="/contact">
           Contact
         </a>
       </Menu>

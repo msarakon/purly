@@ -69,4 +69,7 @@
   .header {
     font-size: 0.8em;
   }
+  .header-theme {
+    text-shadow: 2px 2px var(--purple-dark);
+  }
 }

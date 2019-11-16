@@ -1,7 +1,8 @@
 import React from "react";
 import Loader from "./components/Loader";
+import Button from "./components/Button";
+import Burger from "./Burger";
 import "./App.css";
-import Burger from './Burger'
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);
@@ -11,10 +12,22 @@ const App = () => {
   if (loading) {
     return <Loader />;
   } else {
-    return <div className="app">
-      <Burger></Burger>
-      blööblää
-      </div>;
+    const buttonSize = "250px";
+    return (
+      <div className="app">
+        <Burger></Burger>
+        <div className="header"></div>
+        <div className="buttons">
+          <div className="buttons-top">
+            <Button size={buttonSize} content={"😊"} />
+          </div>
+          <div className="buttons-bottom">
+            <Button size={buttonSize} content={"☁️"} />
+            <Button size={buttonSize} content={"🌳"} />
+          </div>
+        </div>
+      </div>
+    );
   }
 };
 

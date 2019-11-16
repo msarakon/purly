@@ -1,12 +1,8 @@
 import React from "react";
 import Loader from "./components/Loader";
 import Button from "./components/Button";
-import Burger from "./Burger";
+import Burger from './components/Burger';
 import "./App.css";
-<<<<<<< HEAD
-=======
-import Burger from './components/Burger'
->>>>>>> Add fontawesome icons
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);

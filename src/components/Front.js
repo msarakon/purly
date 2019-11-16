@@ -38,6 +38,16 @@ const Front = ({ setView }) => {
     <div className="view-container">
       <div className="header">
         <div className="header-content">
+          <div className="header-bg-left">
+            <span role="img" aria-label="cloudies">
+              ☁️ ☁️
+            </span>
+          </div>
+          <div className="header-bg-right">
+            <span role="img" aria-label="cloudies">
+              ☁️ ☁️
+            </span>
+          </div>
           <div className="header-title">Hello! Today's theme is</div>
           <div className="header-theme">Sleep</div>
           {box && (

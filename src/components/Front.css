@@ -4,6 +4,24 @@
   height: 35%;
   width: 100%;
   align-items: stretch;
+  position: relative;
+}
+
+.header-bg-left,
+.header-bg-right {
+  font-size: 7em;
+  position: absolute;
+  text-align: center;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.header-bg-left {
+  left: 0.5em;
+}
+
+.header-bg-right {
+  right: 0.5em;
 }
 
 .header-content {
@@ -71,5 +89,9 @@
   }
   .header-theme {
     text-shadow: 2px 2px var(--purple-dark);
+  }
+  .header-bg-left,
+  .header-bg-right {
+    font-size: 5em;
   }
 }

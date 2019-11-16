@@ -8,8 +8,8 @@
   margin: 0;
   font-size: 2em;
   position: absolute;
-  top: 1em;
-  right: 1em;
+  top: 0;
+  right: 0.5em;
   text-shadow: 2px 2px var(--purple-dark);
   z-index: 1000;
 }
@@ -19,6 +19,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .logo-small {
+    font-size: 1.5em;
+  }
   .buttons {
     font-size: 0.8em;
   }

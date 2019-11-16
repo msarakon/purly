@@ -64,3 +64,9 @@
   width: 200px;
   color: var(--orange);
 }
+
+@media screen and (max-width: 800px) {
+  .header {
+    font-size: 0.8em;
+  }
+}

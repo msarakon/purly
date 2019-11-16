@@ -6,5 +6,5 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 
 ## How to run
 
-`yarn install`
-`yarn start`
+    yarn install
+    yarn start

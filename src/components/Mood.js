@@ -47,7 +47,7 @@ const Mood = ({ setView }) => {
             ))}
           </div>
         </div>
-        <div className="box small" onClick={() => setView(null)}>
+        <div className="box clickable" onClick={() => setView(null)}>
           <span role="img" aria-label="back arrow">
             ⬅️
           </span>{" "}

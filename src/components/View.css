@@ -6,6 +6,7 @@
   width: 100%;
   animation: view-appear linear 0.5s;
   background-image: var(--bg-image);
+  padding-top: 1em;
 }
 
 .view-title {
@@ -13,7 +14,6 @@
   font-family: var(--alt-title-font);
   color: var(--purple-dark);
   text-align: center;
-  padding-top: 1em;
 }
 
 .view-content {

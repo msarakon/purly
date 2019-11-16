@@ -36,7 +36,7 @@ const HelpChat = ({ setView }) => {
                 </div>
               ))}
             <div
-              className="box small"
+              className="box clickable"
               onClick={index.length ? goBack : () => setView(null)}
             >
               <span role="img" aria-label="back arrow">

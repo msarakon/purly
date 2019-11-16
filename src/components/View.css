@@ -66,6 +66,14 @@
   box-shadow: none;
 }
 
+.box img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+
 @keyframes view-appear {
   0% {
     top: 100%;

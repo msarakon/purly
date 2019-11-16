@@ -33,6 +33,12 @@ const HelpChat = ({ setView }) => {
                   }
                 >
                   {choice.text}
+                  {choice.img && (
+                    <img
+                      alt="Animal :)"
+                      src={require(`../img/${choice.img}`)}
+                    />
+                  )}
                 </div>
               ))}
             <div

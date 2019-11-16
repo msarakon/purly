@@ -44,7 +44,12 @@ const choices = [
         text: "Call the emergency number"
       },
       {
-        text: "Look at cute animal pictures 🐱"
+        text: "Show me a cute animal 🐱",
+        choices: [
+          {
+            img: "doggo.jpg"
+          }
+        ]
       }
     ]
   }

@@ -7,6 +7,7 @@
   --orange-dark: #db682e;
   --bg-image: linear-gradient(var(--orange-light), var(--purple-light));
   --title-font: "Pacifico", cursive;
+  --alt-title-font: "Fredoka One", cursive;
   font-size: 14px;
 }
 

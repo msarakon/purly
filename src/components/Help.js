@@ -27,7 +27,7 @@ const HelpChat = ({ setView }) => {
             {choices &&
               choices.map((choice, choiceIndex) => (
                 <div
-                  className="box"
+                  className="box clickable"
                   onClick={
                     choice.choices ? () => choose(choiceIndex) : undefined
                   }

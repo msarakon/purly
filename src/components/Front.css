@@ -1,7 +1,44 @@
 .header {
-  float: left;
+  display: flex;
+  flex-direction: column;
   height: 35%;
   width: 100%;
+  align-items: stretch;
+}
+
+.header-content {
+  padding: 3em 1em 0 1em;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 2em;
+  font-family: var(--alt-title-font);
+  color: var(--purple-dark);
+}
+
+.header-theme {
+  font-size: 3em;
+  font-family: var(--title-font);
+  color: var(--orange-dark);
+  text-shadow: 3px 3px var(--purple-dark);
+}
+
+.header .box {
+  margin-top: 1em;
+}
+
+.close {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  font-family: var(--alt-title-font);
+  color: var(--orange-dark);
+  font-weight: bold;
+}
+
+.close:hover {
+  cursor: pointer;
 }
 
 .buttons {

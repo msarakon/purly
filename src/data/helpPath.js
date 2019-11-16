@@ -4,23 +4,31 @@ const choices = [
     title: "Who do you want to contact?",
     choices: [
       {
-        text: "My parents",
-        title: "What do you want to do?",
+        text: "My parents 👪",
+        title: "Who do you need?",
         choices: [
           {
-            text: "Call dad :)"
+            text: "My mom"
           },
           {
-            text: "Call mom :))))"
+            text: "My dad"
           }
         ]
       },
       {
-        text: "A nurse",
-        choices: []
+        text: "A nurse 👩‍⚕️",
+        title: "How do you want to contact?",
+        choices: [
+          {
+            text: "Book an appointment with nurse"
+          },
+          {
+            text: "I want the nurse to call me"
+          }
+        ]
       },
       {
-        text: "A psychologist",
+        text: "A psychologist 👩‍⚕️",
         choices: []
       }
     ]

@@ -36,7 +36,11 @@
   background-color: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   transition: 0.5s all;
-  transform: scale(1.05);
+  transform: scale(1.02);
+}
+
+.box.small {
+  padding: 1em 1.5em;
 }
 
 @keyframes view-appear {

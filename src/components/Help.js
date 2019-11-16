@@ -5,10 +5,18 @@ const HelpChat = () => {
   const [index, setIndex] = React.useState([]);
   const [show, setShow] = React.useState(true);
   const { title, choices } = resolveChoices(index);
-  const choose = idx => {
+  const reanimate = () => {
     setShow(false);
-    setIndex([...index, idx]);
     setTimeout(() => setShow(true), 0);
+  };
+  const choose = idx => {
+    setIndex([...index, idx]);
+    reanimate();
+  };
+  const goBack = () => {
+    index.splice(-1, 1);
+    setIndex(index);
+    reanimate();
   };
   return (
     <>
@@ -27,6 +35,16 @@ const HelpChat = () => {
                   {choice.text}
                 </div>
               ))}
+            {index.length ? (
+              <div className="box small" onClick={goBack}>
+                <span role="img" aria-label="back arrow">
+                  ⬅️
+                </span>{" "}
+                Go back
+              </div>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       )}

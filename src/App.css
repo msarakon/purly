@@ -22,3 +22,22 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.buttons-top .button {
+  align-self: flex-end;
+}
+
+.button {
+  height: 200px;
+  width: 200px;
+}
+
+@media screen and (max-width: 800px) {
+  .buttons {
+    font-size: 0.8em;
+  }
+  .button {
+    height: 150px;
+    width: 150px;
+  }
+}

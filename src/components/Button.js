@@ -1,12 +1,8 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ size, content }) => {
-  return (
-    <div className="button" style={{ width: size, height: size }}>
-      {content}
-    </div>
-  );
+const Button = ({ content }) => {
+  return <div className="button">{content}</div>;
 };
 
 export default Button;

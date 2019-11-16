@@ -12,18 +12,17 @@ const App = () => {
   if (loading) {
     return <Loader />;
   } else {
-    const buttonSize = "200px";
     return (
       <div className="app">
         <Burger></Burger>
         <div className="header"></div>
         <div className="buttons">
           <div className="buttons-top">
-            <Button size={buttonSize} content={"😊"} />
+            <Button content={"😊"} />
           </div>
           <div className="buttons-bottom">
-            <Button size={buttonSize} content={"☁️"} />
-            <Button size={buttonSize} content={"🌳"} />
+            <Button content={"☁️"} />
+            <Button content={"🌳"} />
           </div>
         </div>
       </div>

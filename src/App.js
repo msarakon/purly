@@ -12,7 +12,7 @@ const App = () => {
   if (loading) {
     return <Loader />;
   } else {
-    const buttonSize = "250px";
+    const buttonSize = "200px";
     return (
       <div className="app">
         <Burger></Burger>

@@ -45,7 +45,7 @@ const Front = ({ setView }) => {
               <div className="close" onClick={() => setBox(null)}>
                 x
               </div>
-              <div>{box.question}</div>
+              <div className="box-question">{box.question}</div>
               <div className="box-options">
                 {box.options &&
                   box.options.map((option, index) => (
@@ -60,7 +60,10 @@ const Front = ({ setView }) => {
       </div>
       <div className="buttons">
         <div className="buttons-top">
-          <Button content={<FontAwesomeIcon icon={faSmile} />} />
+          <Button
+            content={<FontAwesomeIcon icon={faSmile} />}
+            onSelect={() => setView("mood")}
+          />
         </div>
         <div className="buttons-bottom">
           <Button content={<FontAwesomeIcon icon={faBed} />} />

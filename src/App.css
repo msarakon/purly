@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .app {
   height: 100%;
   width: 100%;
@@ -41,3 +42,8 @@
     width: 150px;
   }
 }
+=======
+#app {
+  font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> Add fontawesome icons

@@ -17,7 +17,7 @@ const App = () => {
   } else {
     return (
       <div className="app">
-        <Burger></Burger>
+        <Burger setView={setView} />
         <div className="logo logo-small" onClick={() => setView(null)}>
           Purly
         </div>

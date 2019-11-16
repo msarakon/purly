@@ -1,7 +1,7 @@
 import React from "react";
 import helpPath from "../data/helpPath";
 
-const HelpChat = () => {
+const HelpChat = ({ setView }) => {
   const [index, setIndex] = React.useState([]);
   const [show, setShow] = React.useState(true);
   const { title, choices } = resolveChoices(index);
@@ -35,16 +35,15 @@ const HelpChat = () => {
                   {choice.text}
                 </div>
               ))}
-            {index.length ? (
-              <div className="box small" onClick={goBack}>
-                <span role="img" aria-label="back arrow">
-                  ⬅️
-                </span>{" "}
-                Go back
-              </div>
-            ) : (
-              ""
-            )}
+            <div
+              className="box small"
+              onClick={index.length ? goBack : () => setView(null)}
+            >
+              <span role="img" aria-label="back arrow">
+                ⬅️
+              </span>{" "}
+              Go back
+            </div>
           </div>
         </div>
       )}

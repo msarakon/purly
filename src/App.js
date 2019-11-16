@@ -24,7 +24,7 @@ const App = () => {
         {(() => {
           switch (view) {
             case "help":
-              return <Help />;
+              return <Help setView={setView} />;
             default:
               return <Front setView={setView} />;
           }

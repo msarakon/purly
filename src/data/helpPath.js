@@ -35,8 +35,18 @@ const choices = [
   },
   {
     text: "I'm having a bad moment and need help ASAP. 😞",
-    title: "Who do you want to contact?",
-    choices: []
+    title: "It's going to be alright.",
+    choices: [
+      {
+        text: "Chat anonymously with a professional"
+      },
+      {
+        text: "Call the emergency number"
+      },
+      {
+        text: "Look at cute animal pictures 🐱"
+      }
+    ]
   }
 ];
 

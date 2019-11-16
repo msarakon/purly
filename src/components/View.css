@@ -89,3 +89,12 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .view-title {
+    font-size: 2em;
+  }
+  .box {
+    padding: 1em;
+  }
+}
